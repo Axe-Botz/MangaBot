@@ -1,16 +1,13 @@
 from pyrogram import Client
 from os import getenv
-from dotenv import load_dotenv
 
-load_dotenv()
+API_ID = 7839236
+API_HASH = "5c34945e1a52089f3bf434a44b25aa1d"
+TOKEN = "6180070295:AAFjJSWRRDkLbwhDhpFq6o4wnK4E9GXV718"
 
-API_ID = getenv("API_ID")
-API_HASH = getenv("API_HASH")
-TOKEN = getenv("TOKEN")
-
-UPDATES = getenv("UPDATES")
-SUPPORT = getenv("SUPPORT")
-MUST_JOIN = getenv("MUST_JOIN")
+UPDATES = "AxeBotz"
+SUPPORT = "AxeChatz"
+MUST_JOIN = UPDATES
 
 asura = Client(
   "ASURA",
