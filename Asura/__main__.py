@@ -15,7 +15,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Asura import asura, BOT_NAME, BOT_USERNAME, SUPPORT, UPDATES, MUST_JOIN
 
 # --------------------------------------------------------------------------------------------------- #
-
+LOG_GROUP_ID = 
 #loop = asyncio.get_event_loop()
 
 @asura.on_message(filters.incoming & filters.private, group=-1)
@@ -321,8 +321,8 @@ async def _rmanga(_, message):
   await m.delete()
   return os.remove(titl)
 
-
-
+async def sendmsg(asura):
+    await asura.send_message(LOG_GROUP_ID, "**✨ Manga Bot Started!**\n|| @tfDaddy ||")
 
 
 if __name__ == "__main__":
