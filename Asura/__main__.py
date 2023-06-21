@@ -15,7 +15,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Asura import asura, BOT_NAME, BOT_USERNAME, SUPPORT, UPDATES, MUST_JOIN
 
 # --------------------------------------------------------------------------------------------------- #
-LOG_GROUP_ID = 
+LOG_GROUP_ID = -1001972503090
 #loop = asyncio.get_event_loop()
 
 @asura.on_message(filters.incoming & filters.private, group=-1)
