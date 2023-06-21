@@ -34,7 +34,7 @@ async def must_join_channel(bot: asura, msg: Message):
             try:
                 await msg.reply_photo(photo="https://telegra.ph/file/4ad5c5540908a9480b254.jpg", caption=f"According to my database you have not Joined my channel, to use me for free please kindly Join my channel for the latest updates !!",
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("🚀 Click here to Join", url=f"https://t.me/OxA_Code")]
+                        [InlineKeyboardButton("🚀 Click here to Join", url=f"https://t.me/{MUST_JOIN}")]
                     ])
                 )
                 await msg.stop_propagation()
@@ -169,7 +169,7 @@ async def hhelp(_, query):
 async def abblp(_, query):
   qm = query.message
   return await qm.edit_text(
-    text=f"This bot is developed by a noob for getting mangas for free in just one click !!\n\nNoob : @Its_romeoo\n\nIf you are facing any problem regarding me then kindly report in our support chat, don't forget to subscribe my channel.", 
+    text=f"This bot is developed by a noob for getting mangas for free in just one click !!\n\nNoob : @tfDaddy\n\nIf you are facing any problem regarding me then kindly report in our support chat, don't forget to subscribe my channel.", 
     reply_markup=InlineKeyboardMarkup(
       [
         [
