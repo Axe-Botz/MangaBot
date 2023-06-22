@@ -2,10 +2,10 @@ import os
 import requests
 from pyrogram import Client, filters
 
-from Asura import asura as app
+from Asura import asura
 
 # Handler for receiving messages
-@app.on_message(filters.command("img"))
+@asura.on_message(filters.command("img"))
 def handle_search(_, message):
     # Get the search query from the message
     query = message.text.split(" ", 1)[1]
@@ -15,7 +15,7 @@ def handle_search(_, message):
     
     # Send the photos as a reply to the message
     for photo in photos:
-        app.send_photo(message.chat.id, photo)
+        asura.send_photo(message.chat.id, photo)
         
 
 def fetch_pinterest_photos(query):
