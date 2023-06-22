@@ -2,7 +2,7 @@ import os
 import requests
 from pyrogram import Client, filters
 
-
+from Asura import asura as app
 
 # Handler for receiving messages
 @app.on_message(filters.command("img"))
